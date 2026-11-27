@@ -1,6 +1,8 @@
 name: Stage browser checks
 
 on:
+  push:
+    branches: [verify/stage-browser-green]
   pull_request:
     paths:
       - '.github/workflows/stage-browser-checks.yml'
